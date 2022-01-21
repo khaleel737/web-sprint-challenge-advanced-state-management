@@ -3,10 +3,10 @@ import { rest } from 'msw';
 let smurfs = [
   {
     id:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
-    name:'Sally Smurf',
-    position:'Victoria Smurf Leader',
-    nickname: 'Sal',
-    description: 'Sally is the greatest Victoria Secret Smurf, She\'s Been in this smurfalicious village for a long time showing the Smurf Ladies how to model.'
+    name:'Poppa Smurf',
+    position:'Village Leader',
+    nickname: 'Pops',
+    description: 'Papa is the practical village leader and the father figure of 100 or so young Smurfs. He is easily identified by his red Smurf hat, pants, and a shortly-trimmed white beard and moustache.'
   },
   {
     id:"JzdWIiOiIxMjM0NTY3ODkwIiwibmFtZ",
