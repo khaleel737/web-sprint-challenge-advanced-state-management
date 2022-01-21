@@ -3,17 +3,17 @@ import { rest } from 'msw';
 let smurfs = [
   {
     id:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
-    name:'Poppa Smurf',
-    position:'Village Leader',
-    nickname: 'Pops',
-    description: 'Papa is the practical village leader and the father figure of 100 or so young Smurfs. He is easily identified by his red Smurf hat, pants, and a shortly-trimmed white beard and moustache.'
+    name:'Sally Smurf',
+    position:'Victoria Smurf Leader',
+    nickname: 'Sal',
+    description: 'Sally is the greatest Victoria Secret Smurf, She\'s Been in this smurfalicious village for a long time showing the Smurf Ladies how to model.'
   },
   {
     id:"JzdWIiOiIxMjM0NTY3ODkwIiwibmFtZ",
-    name:'Smurfette',
-    position:'Beautician',
-    nickname: 'Smurfette',
-    description: 'Smurfette\'s role in the village is that of any other smurf; chores, and helping out where she can, but for her specifically, she is often seen to be very active in organizing events.'
+    name:'Smurfnov',
+    position:'Vodka Producer',
+    nickname: 'Smirnof',
+    description: 'Smurfnov\'s role in the village is to produce good smurf alcohol to get the smurfs up and running, He is one of the greatest Smurnov Producers in this village and all credits go to his humble sober attitude.'
   }
 ];
 
@@ -34,6 +34,7 @@ export const handlers = [
     }),
 
     rest.post('http://localhost:3333/smurfs', (req, res, ctx) => {
+      // console.log(req.body);
       const { name, position, nickname, description } = req.body;
       const newSmurf = { name, position, nickname, description, id: Date.now() };
 
